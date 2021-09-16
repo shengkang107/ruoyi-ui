@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <div class="login-left">
-      <div class="welcome-font">欢迎登录华辰优安管理系统abc</div>
+      <div class="welcome-font">欢迎登录华辰优安管理系统</div>
       <div class="english-font">S I G N I N .</div>
     </div>
     <div class="login-form">
