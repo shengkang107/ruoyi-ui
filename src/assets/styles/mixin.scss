@@ -1,0 +1,99 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin scrollBar {
+  &::-webkit-scrollbar-track-piece {
+    background: #d3dce6;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #99a9bf;
+    border-radius: 20px;
+  }
+}
+
+@mixin relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin pct($pct) {
+  width: #{$pct};
+  position: relative;
+  margin: 0 auto;
+}
+
+@mixin triangle($width, $height, $color, $direction) {
+  $width: $width/2;
+  $color-border-style: $height solid $color;
+  $transparent-border-style: $width solid transparent;
+  height: 0;
+  width: 0;
+
+  @if $direction==up {
+    border-bottom: $color-border-style;
+    border-left: $transparent-border-style;
+    border-right: $transparent-border-style;
+  }
+
+  @else if $direction==right {
+    border-left: $color-border-style;
+    border-top: $transparent-border-style;
+    border-bottom: $transparent-border-style;
+  }
+
+  @else if $direction==down {
+    border-top: $color-border-style;
+    border-left: $transparent-border-style;
+    border-right: $transparent-border-style;
+  }
+
+  @else if $direction==left {
+    border-right: $color-border-style;
+    border-top: $transparent-border-style;
+    border-bottom: $transparent-border-style;
+  }
+}
+
+@mixin display-flex($important: no) {
+    
+  @if $important == important {
+      display: flex!important;
+      display: -webkit-box!important;
+      display: -moz-box!important;
+      display: -ms-flexbox!important;
+      display: -webkit-flex!important;
+  } @else {
+      display: flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+  }
+}
+
+@mixin flex($flex: 1, $important: no) {
+  @if $important == important {
+      flex: $flex!important;
+      -webkit-box-flex: $flex!important;
+      -moz-box-flex: $flex!important; 
+      -ms-flex: $flex!important; 
+      -webkit-flex: $flex!important; 
+  } @else {
+      flex: $flex;
+      -webkit-box-flex: $flex;
+      -moz-box-flex: $flex; 
+      -ms-flex: $flex; 
+      -webkit-flex: $flex; 
+  }
+}

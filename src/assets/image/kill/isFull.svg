@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="17px" viewBox="0 0 46 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 80</title>
+    <g id="全部" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-80" fill="#FF191A">
+            <rect id="矩形备份-52" opacity="0.100000001" x="0" y="1" width="46" height="16" rx="2"></rect>
+            <text id="已约满" font-family="PingFangSC, 蘋方-簡" font-size="12" font-weight="normal">
+                <tspan x="5" y="13">已约满</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

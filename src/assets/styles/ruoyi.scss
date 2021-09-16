@@ -1,0 +1,404 @@
+ /**
+ * 通用css样式布局处理
+ * Copyright (c) 2019 ruoyi
+ */
+ @import './variables.scss';
+ /** 基础通用 **/
+.pt5 {
+	padding-top: 5px;
+}
+.pr5 {
+	padding-right: 5px;
+}
+.pb5 {
+	padding-bottom: 5px;
+}
+.mt5 {
+	margin-top: 5px;
+}
+.mr5 {
+	margin-right: 5px;
+}
+.mb5 {
+	margin-bottom: 5px;
+}
+.mb8 {
+	margin-bottom: 8px;
+}
+.ml5 {
+	margin-left: 5px;
+}
+.mt10 {
+	margin-top: 10px;
+}
+.mr10 {
+	margin-right: 10px;
+}
+.mb10 {
+	margin-bottom: 10px;
+}
+.ml0 {
+	margin-left: 10px;
+}
+.mt20 {
+	margin-top: 20px;
+}
+.mr20 {
+	margin-right: 20px;
+}
+.mb20 {
+	margin-bottom: 20px;
+}
+.m20 {
+	margin-left: 20px;
+}
+
+.font12 {
+	font-size: 12px;
+}
+
+.color33 {
+	color: #333;
+}
+
+.color66 {
+	color: #666;
+}
+
+.color99 {
+	color: #999;
+}
+
+.el-table {
+	.el-table__header-wrapper, .el-table__fixed-header-wrapper {
+		th {
+			word-break: break-word;
+			background-color: #f8f8f9;
+			color: #515a6e;
+			height: 40px;
+			font-size: 13px;
+		}
+	}
+	.el-table__body-wrapper {
+		.el-button [class*="el-icon-"] + span {
+			margin-left: 1px;
+		}
+	}
+}
+
+/** 表单布局 **/
+.form-header {
+    font-size:15px;
+	color:#6379bb;
+	border-bottom:1px solid #ddd;
+	margin:8px 10px 25px 10px;
+	padding-bottom:5px
+}
+
+/** 表格布局 **/
+.pagination-container {
+	position: relative;
+	height: 25px;
+	margin-bottom: 10px;
+	margin-top: 15px;
+	padding: 10px 20px !important;
+}
+
+/* tree border */
+.tree-border {
+    margin-top: 5px;
+    border: 1px solid #e5e6e7;
+    background: #FFFFFF none;
+    border-radius:4px;
+}
+
+.pagination-container .el-pagination {
+	right: 0;
+	position: absolute;
+}
+
+.table-div-right {
+	text-align: center;
+}
+
+.table-btn-right {
+	font-size: 12px;
+	border: none;
+	color: #409EFF;
+	background: none;
+}
+
+.el-table .fixed-width .el-button--mini {
+	color: #409EFF;
+	padding-left: 0;
+	padding-right: 0;
+	width: inherit;
+}
+
+.el-table .maxed-width .el-button--mini{
+	color: #409EFF;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 0;
+	width: 115px;
+}
+
+.el-tree-node__content > .el-checkbox {
+	margin-right: 8px;
+}
+
+.list-group-striped > .list-group-item {
+	border-left: 0;
+	border-right: 0;
+	border-radius: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.list-group {
+	padding-left: 0px;
+	list-style: none;
+}
+
+.list-group-item {
+	border-bottom: 1px solid #e7eaec;
+	border-top: 1px solid #e7eaec;
+	margin-bottom: -1px;
+	padding: 11px 0px;
+	font-size: 13px;
+}
+
+.pull-right {
+	float: right !important;
+}
+
+.el-card__header {
+	padding: 14px 15px 7px;
+	min-height: 40px;
+}
+
+.el-card__body {
+	padding: 15px 20px 20px 20px;
+}
+
+.card-box {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-bottom: 10px;
+}
+
+/* text color */
+.text-navy {
+	color: #1ab394;
+}
+
+.text-primary {
+	color: inherit;
+}
+
+.text-success {
+	color: #1c84c6;
+}
+
+.text-info {
+	color: #23c6c8;
+}
+
+.text-warning {
+	color: #f8ac59;
+}
+
+.text-danger {
+	color: #ed5565;
+}
+
+.text-muted {
+	color: #888888;
+}
+
+/* image */
+.img-circle {
+	border-radius: 50%;
+}
+
+.img-lg {
+	width: 120px;
+	height: 120px;
+}
+
+.avatar-upload-preview {
+	position: absolute;
+	top: 50%;
+	transform: translate(50%, -50%);
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	box-shadow: 0 0 4px #ccc;
+	overflow: hidden;
+}
+
+/* 拖拽列样式 */
+.sortable-ghost{
+	opacity: .8;
+	color: #fff!important;
+	background: #42b983!important;
+}
+
+.top-right-btn {
+	position: relative;
+	float: right;
+}
+
+//微信支付弹框
+.wx-pay-dialog {
+	.el-dialog {
+		position: absolute;
+		top: 50%;
+    left: 50%;
+    margin-left: -30%;
+    margin-top: -340px !important;
+    height: 530px;
+		display: inline-block;
+		.el-dialog__body {
+			height: calc(100% - 55px);
+			margin: 20px 0;
+			padding: 20px 30px;
+			background: #f3f7f9;
+		}
+	}
+}
+.wx-pay-content {
+	.w-p-logo {
+		text-align: center;
+		margin-bottom: 15px;
+		img {
+			width: 115px;
+		}
+	}
+	.w-p-msg {
+		background: #fff;
+		padding: 30px 40px;
+		display: inline-block;
+		width: 100%;
+		.w-p-tips {
+			padding-left: 35px;
+			font-size: 16px;
+			color: #333;
+			.w-p-amount {
+				color: $amountRed;
+			}
+		}
+		.w-p-left {
+			float: left;
+			padding: 43px;
+			width: 236px;
+			height: 236px;
+			box-sizing: border-box;
+		}
+		.w-p-right {
+			line-height: 20px;
+			padding-top: 58px;
+		}
+	}
+	.wx-pay-suc-msg {
+		background: #fff;
+		padding: 100px 20px;
+		font-size: 20px;
+		font-weight: 500;
+		text-align: center;
+		span {
+			color: #ed5565;
+			&.font-green {
+				font-size: 16px;
+				color: $themeGreen;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+//组件形式的弹框
+.dialog-warp {
+	.dialog-footer {
+    text-align: right;
+	}
+}
+
+//上传图片样式
+.upload-url {
+	display: inline-block;
+	.el-upload--picture-card {
+		width: 80px;
+		height: 80px;
+		line-height: 82px;
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	.el-upload-list--picture-card{
+		.el-upload-list__item {
+			width: 80px;
+			height: 80px;
+		}
+	}
+}
+
+.el-image-viewer__wrapper {
+	.el-icon-circle-close {
+		color: #fff;
+	}
+}
+
+// 问号提示
+.el-icon-question {
+	color: $amountRed;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+/**气泡文字*/
+.popText {
+	text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+	-webkit-box-orient: vertical;
+	cursor: pointer;
+}
+
+// 封箱按钮
+.el-table {
+	.cell {
+		position: relative;
+		.isBox-icon {
+			position: absolute;
+			width: 20px;
+			margin-left: 1px;
+			display: inline-block;
+		}
+	}
+}
+
+//日期控件的样式
+.red-font {
+	background: url(../image/kill/isFull.svg) no-repeat;
+	background-size: 75% 60%;
+	-o-background-size: 75% 60%;
+	-webkit-background-size: 75% 60%;
+	background-position: 51% 136%;
+}
+.green-font {
+    background: url(../image/kill/notFull.svg) no-repeat;
+		background-size: 60% 60%;
+    -o-background-size: 60% 60%;
+    -webkit-background-size: 60% 60%;
+    background-position: 51% 136%;
+}
+
+.green-text-btn {
+	color: $themeGreen;
+	cursor: pointer;
+}

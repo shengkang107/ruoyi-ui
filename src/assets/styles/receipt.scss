@@ -1,0 +1,17 @@
+// 发票
+/deep/ .el-dialog__header {
+  background: $themeGreen;
+  text-align: center;
+  padding: 10px;
+  .el-dialog__title,
+  .el-dialog__headerbtn .el-dialog__close {
+    color: #fff;
+    font-size: 16px;
+  }
+  .el-dialog__headerbtn {
+    top: 13px;
+  }
+}
+/deep/ .el-dialog__body {
+  padding: 0;
+}
